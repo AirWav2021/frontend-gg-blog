@@ -41,7 +41,7 @@ export const FullPost = () => {
 				title={data.title}
 				imageUrl={
 					data.imageUrl
-						? `http://localhost:4444${data.imageUrl}`
+						? `${process.env.REACT_APP_API_URL}${data.imageUrl}`
 						: 'https://sun9-61.userapi.com/impf/c857436/v857436376/1f2335/8OVWunsX_LM.jpg?size=604x453&quality=96&sign=b6f73f98326122a514110aba7a28c752&type=album'
 				}
 				user={data.user}
